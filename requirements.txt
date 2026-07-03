@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-dotenv
+pydantic
+sqlmodel
+requests
+python-multipart
+pytest
+pytest-asyncio
+httpx
