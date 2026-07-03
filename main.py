@@ -20,7 +20,7 @@ from contextlib import asynccontextmanager
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 GITHUB_REPO = os.getenv("GITHUB_REPO")
 POLL_LABEL = os.getenv("POLL_LABEL", "devin-fix")
-POLL_INTERVAL_SECONDS = 30
+POLL_INTERVAL_SECONDS = 5
 LAST_COMMENT_POLL = datetime.now(timezone.utc)  # only look at comments created after startup
 
 # --- Configuration ---
@@ -278,7 +278,7 @@ async def status_poller():
                 session.commit()
             except Exception as e:
                 print(f"Poller error: {e}")
-        await asyncio.sleep(20)
+        await asyncio.sleep(8)
 
 # --- GitHub Poller (alternative trigger to webhooks) ---
 async def github_poller():
