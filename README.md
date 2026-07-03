@@ -118,7 +118,7 @@ With the app running and `GITHUB_REPO`/`GITHUB_TOKEN` set:
 3. Watch it progress on the dashboard — status updates every 20s.
 4. To nudge an in-progress session, use the **💬 Input** button on the dashboard row to send a message
    directly to that session.
-5. When Devin opens a PR, the task flips to `Complete` and the PR link appears in the table.
+5. When Devin opens a PR, the task flips to `devin-complete` and the PR link appears in the table.
 
 ## Simulating the workflow (no credentials needed)
 
